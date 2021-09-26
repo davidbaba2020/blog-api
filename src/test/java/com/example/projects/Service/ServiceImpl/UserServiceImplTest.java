@@ -32,10 +32,6 @@ class UserServiceImplTest {
 
     @Test
     void registerUser() throws Exception {
-//        List<Comments> comments = null;
-//        List<Post> post = null;
-//        List<User> friend = null;
-//        Map<Long, String> favoritePosts;
         User user2= User.builder()
                 .userId(2L)
                 .firstName("Daniel")
@@ -58,9 +54,9 @@ class UserServiceImplTest {
         assertEquals(user3, userService.registerUser(user3));
     }
 
-    @Test
-    void loginUser() {
-    }
+//    @Test
+//    void loginUser() {
+//    }
 
     @Test
     public void getAllUsers() throws Exception {
@@ -85,11 +81,11 @@ class UserServiceImplTest {
     assertEquals(2, userService.getAllUsers().size());
 
     }
-    @Test
-    void deactivateAccount() {
-    }
-
-    @Test
-    void activateAccount() {
-    }
+//    @Test
+//    void deactivateAccount() {
+//    }
+//
+//    @Test
+//    void activateAccount() {
+//    }
 }
